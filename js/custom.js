@@ -1,30 +1,22 @@
 jQuery(document).ready(function() {
-  
+  	  window.scrollTo(0, 0);
 
    $('#carouselHacked').carousel();
-  
-	//this code is for the gmap
-	 var map = new GMaps({
-        el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
-      });
-
 
       //this code is for smooth scroll and nav selector
-            $(document).ready(function () {
+
               $(document).on("scroll", onScroll);
-              
+
               //smoothscroll
               $('a[href^="#"]').on('click', function (e) {
                   e.preventDefault();
                   $(document).off("scroll");
-                  
+
                   $('a').each(function () {
                       $(this).removeClass('active');
                   })
                   $(this).addClass('active');
-                
+
                   var target = this.hash,
                       menu = target;
                   $target = $(target);
@@ -32,11 +24,10 @@ jQuery(document).ready(function() {
                       'scrollTop': $target.offset().top+2
                   }, 500, 'swing', function () {
                       window.location.hash = target;
-                     
+
                   });
               });
-			  window.scrollTo(0, 0);	
-          });
+
 
           function onScroll(event){
               var scrollPos = $(document).scrollTop();
@@ -52,8 +43,8 @@ jQuery(document).ready(function() {
                   }
               });
           }
-     
-     
+
+
      //this code is for animation nav
      jQuery(window).scroll(function() {
         var windowScrollPosTop = jQuery(window).scrollTop();
@@ -67,15 +58,7 @@ jQuery(document).ready(function() {
           jQuery(".header").css({"background": "transparent",});
            jQuery(".top-header img.logo").css({"margin-top": "-12px", "margin-bottom": "25px"});
            jQuery(".navbar-default").css({"margin-top": "12px", "margin-bottom": "0"});
-          
+
         }
      });
-
 });
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-10146041-21', 'auto');
-  ga('send', 'pageview');
