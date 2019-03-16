@@ -1,6 +1,25 @@
 jQuery(document).ready(function() {
   	  window.scrollTo(0, 0);
-
+    
+    $(".submit-btn").click(function(){
+    let name = $(".name").val();
+    let email = $(".email").val();
+    let phone = $(".phone").val();
+    let body = $(".message").val();
+        console.log("Nombre: " + name + "\n Correo: " + email + " Telefono: " + phone +"\n Mensaje: " + body);
+    let bText = ("Nombre: " + name + "\n Correo: " + email + " Telefono: " + phone +"\n Mensaje: " + body);
+    $.ajax({
+      type: "POST",
+      url: "https://api.elasticemail.com/v2/email/send?apikey=74f64cd9-cd37-45c5-9b5f-be3b41c5a5fa&from=fetec.gdl.dev@gmail.com&subject=MensajeDeContacto&to=gusta.flores98@gmail.com&bodyText=" + bText + "&isTransactional=true",
+      success: function (data) {
+       console.log(data);
+      },
+    }).done(function() {
+      console.log("nepe");
+    });
+  })
+    
+    
    $('#carouselHacked').carousel();
 
       //this code is for smooth scroll and nav selector
@@ -62,3 +81,4 @@ jQuery(document).ready(function() {
         }
      });
 });
+
