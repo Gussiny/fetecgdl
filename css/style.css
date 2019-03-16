@@ -61,6 +61,7 @@ h1, h2{
 }
 .nav-bar{
 	margin-top: 27px;
+    width: 800px;
 }
 .navbar-toggle span{
 	color: #fff;
@@ -253,6 +254,93 @@ li a.active{
 }
 
 
+/*service area*/
+.service{
+	background: #0057A8;
+	background-repeat: repeat;
+	margin-top: 40px;
+}
+.service h2{
+	font-size: 90px;
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.service h4{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 70px;
+	display: block;
+}
+.single-service{
+	text-align:center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-service-img {
+  width: 205px;
+  height: 125px;
+  padding-left:30px;
+  position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-img {
+  width: 100%;
+  background: #3a9ecb;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.single-service h3{
+	margin-top: 10px;
+	color: #fff;
+	padding-bottom: 50px;
+	position:relative;
+    
+}
+.service-img img{
+	position: absolute;
+    -webkit-box-shadow: 1px 9px 5px -5px rgba(212,212,212,1);
+-moz-box-shadow: 1px 9px 5px -5px rgba(212,212,212,1);
+box-shadow: 1px 9px 5px -5px rgba(212,212,212,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*our clients section*/
+
+.our-clients{
+    background: #EEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.our-clients ul{
+    flex: auto;
+    flex-direction: row;
+}
+
+.our-clients img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-transition:all 0.4 ease-in-out;
+    -moz-transition:all 0.4 ease-in-out;
+    -o-transition:all 0.4 ease-in-out;
+    transition:all 0.4 ease-in-out;
+   
+}
+
+.our-clients img:hover{
+    opacity: 1;
+}
+
 /*contact section*/
 
 .contact-caption{
@@ -355,6 +443,8 @@ li a.active{
 .map{
 	position: relative;
 	overflow: hidden;
+    background-image: url("https://tec.mx/sites/default/files/styles/header_full/public/2018-11/Feed%20IG%2010%20A%281%29.jpg?itok=2KVDFvAI");
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 .contact{
 	position: absolute;
