@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
        console.log(data);
       },
     }).done(function() {
-      console.log("nepe");
+      console.log("ENVIADO");
     });
   })
     
