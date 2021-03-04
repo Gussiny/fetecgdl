@@ -1,2 +1,2 @@
 # fetecgdl
-Lanfing page de FETEC
+Landing page de FETEC
